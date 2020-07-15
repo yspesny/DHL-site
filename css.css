@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.top-widget{
+    background: #ba0000;
+}
+.content{
+  width: 1195px;
+  margin: 0 auto;
+}
+.header-widget{
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 10px;
+  font-size: 14px;
+}
+.header-widget a{
+  color: white;
+  text-decoration: none;
+}
+.content-widget-menu__elem1{
+  margin-right: 30px;
+}
+.menu{
+
+}
