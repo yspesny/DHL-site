@@ -108,11 +108,12 @@ ul{
 }
 .search_block:hover{
   transition: .5s;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .first-screen{
   background: url("image/top_banner.png") no-repeat;
+  min-height: 800px;
   background-size: 100%;
 }
 .slogan{
@@ -170,9 +171,6 @@ ul{
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0.1em;
-}
-.first_screen__btn{
-  padding-bottom: 140px;
 }
 .first_screen__btn__elem1{
   box-shadow: 0px 10px 18px 0px rgba(255,203,0,0.4);
@@ -263,6 +261,7 @@ ul{
   margin:37px 0 32px 0;
   background: #9d0000;
   color: white;
+  cursor: pointer;
 }
 .select-location__dropmenu i{
   padding: 20px;
