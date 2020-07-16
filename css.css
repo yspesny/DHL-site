@@ -125,7 +125,7 @@ ul{
 }
 .slogan::before{
   content: "";
-  width: 150px;
+  width: 100px;
   height: 4px;
   bottom: 35px;
   position: absolute;
@@ -190,4 +190,92 @@ ul{
   letter-spacing: 0.03em;
   word-spacing: 0.2em;
   margin-top: 120px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.wrapper-box{
+  width: 270px;
+  height: 339px;
+}
+.wrapper-box__title{
+  color: #ba0000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  padding: 15px 0 5px 0;
+}
+.wrapper-box__text{
+  word-spacing: 0.1em;
+  letter-spacing: 0.01em;
+  line-height: 26px;
+  color: #777777;
+  margin-bottom: 11px;
+}
+.wrapper-box__link{
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  word-spacing: 0.1em;
+  position: relative;
+}
+.wrapper-box__link::after{
+  content: '';
+  position: absolute;
+  right: -16px;
+  bottom: 6px;
+  border: 5px solid transparent;
+  border-left: 5px solid #ba0000;
+}
+.select-location{
+  background: #ba0000;
+}
+.select-location__wrapper{
+  padding: 25px 30px;
+}
+.select-location__title{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  position: relative;
+}
+.select-location__wrapper::before{
+  content: "";
+  width: 70px;
+  height: 2px;
+  bottom: -274px;
+  position: absolute;
+  background: #ffcc00;
+}
+.select-location__text{
+  color: white;
+  padding: 47px 0 0 0;
+  word-spacing: 0.1em;
+}
+.select-location__dropmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:37px 0 32px 0;
+  background: #9d0000;
+  color: white;
+}
+.select-location__dropmenu i{
+  padding: 20px;
+  color: #ba0000;
+  background: #ffcc00;
+}
+.select-location__dropmenu__text{
+  padding-left: 20px;
+  letter-spacing: 0.02em;
+}
+.select-location__btn{
+  box-shadow: 0px 10px 18px 0px rgba(255,203,0,0.4);
+  background: #ffcc00;
+  color: #ba0000;
+  padding: 16px 45px;
 }
