@@ -4,24 +4,45 @@
   <meta charset="utf-8">
   <title>DHL</title>
   <link rel="stylesheet" href="css.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c05dc3583f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <div class="top-widget">
-      <div class="content">
+      <div class="container">
         <div class="header-widget">
-          <a class="content-widget"href="#">English</a>
-          <div class="content-widget-menu">
-            <a class="content-widget-menu__elem1" href="#">Contact Center</a>
-            <a class="content-widget-menu__elem2" href="#">County Profile</a>
+          <div class="container-widget">
+            <a class="container-widget__lang"href="#">English
+              <i class="fas fa-chevron-down"></i>
+              <ul class="lang-submenu">
+                <li class="lang-submenu__elem"><a href="#">English</a></li>
+                <li class="lang-submenu__elem"><a href="#">Russian</a></li>
+              </ul>
+            </a>
+          </div>
+          <div class="container-widget-menu">
+            <ul class="container-widget-menu__list">
+              <li class="container-widget-menu__list__item">
+                <a class="container-widget-menu__list__item1"href="#"><i class="fas fa-users"></i> Contact Center</a>
+              </li>
+              <li class="container-widget-menu__list__item">
+                <a class="container-widget-menu__elem2" href="#">Country Profile
+                  <i class="fas fa-chevron-down"></i>
+                  <ul class="country-submenu">
+                    <li class="country-submenu__elem"><a href="#">Russian</a></li>
+                    <li class="country-submenu__elem"><a href="#">America</a></li>
+                    <li class="country-submenu__elem"><a href="#">Ukraine</a></li>
+                  </ul>
+              </a>
+            </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="menu-section">
-      <div class="content header-section">
+      <div class="container header-section">
         <div class="logo">
           <a href="#">
             <img class="logo_img" src="image/logo_img.png" alt="">
@@ -43,5 +64,25 @@
       </div>
     </div>
   </header>
+  <section class="first-screen">
+    <div class="container">
+      <h1 class="slogan">We Deliver<br>With Speed</h1>
+      <p class="slogan_text">When an unknown printer took a galley of type and scrambled<br>it to make a type specimen book. It has survived not only five centuries</p>
+      <div class="advantages">
+        <p class="advantages__elem">Amazing</p>
+        <p class="advantages__elem">Quick</p>
+        <p class="advantages__elem">24/7 supports</p>
+      </div>
+      <div class="first_screen__btn">
+        <a class="first_screen__btn__elem1 btn" href="#">Learn more</a>
+        <a class="first_screen__btn__elem2 btn" href="#">Dhl worldwide</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h1>asdasd</h1>
+    </div>
+  </section>
 </body>
 </html>
