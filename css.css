@@ -14,7 +14,7 @@ ul{
     background: #ba0000;
 }
 .container{
-  max-width: 1277px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .header-widget{
@@ -286,7 +286,6 @@ ul{
 .third-screen__title{
   color: white;
   text-align: center;
-  font-size: 49px;
   padding-top: 50px;
 }
 .third-screen__play__btn{
@@ -298,7 +297,7 @@ ul{
   margin: 0 auto;
   cursor: pointer;
   position: relative;
-    transition: 0.5s;
+  transition: 0.5s;
 }
 .third-screen__play__btn::after{
   content: "";
@@ -311,4 +310,9 @@ ul{
 .third-screen__play__btn:hover{
   transform: scale(1.1);
   transition: 0.5s;
+}
+.third-screen-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -322px;
 }
