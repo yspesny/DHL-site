@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c05dc3583f.js" crossorigin="anonymous"></script>
+  <script src="js/player.js" type="text/javascript"></script>
 </head>
 <body>
   <header>
@@ -115,11 +116,11 @@
       </div>
     </div>
   </section>
-  <section class="third-screen">
-    <h1 class="title third-screen__title">One of the best international service provider</h1>
+  <section id="player"class="third-screen">
+    <!-- <h1 class="title third-screen__title">One of the best international service provider</h1>
     <div class="container">
       <div class="third-screen__play__btn"></div>
-    </div>
+    </div> -->
   </section>
   <section>
     <div class="container">
@@ -165,3 +166,7 @@
   </section>
 </body>
 </html>
+
+<script>
+   var player = new Playerjs({id:"player", file:"video.mp4"});
+</script>

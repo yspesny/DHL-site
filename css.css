@@ -278,11 +278,11 @@ ul{
   color: #ba0000;
   padding: 16px 45px;
 }
-.third-screen{
+/* .third-screen{
   background: url("image/layers_2_1.png") no-repeat;
   height: 700px;
   background-size: 100%;
-}
+} */
 .third-screen__title{
   color: white;
   text-align: center;
