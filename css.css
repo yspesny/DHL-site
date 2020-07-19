@@ -75,25 +75,44 @@ ul{
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-    position: relative;
+  position: relative;
 }
 .menu__item{
   list-style: none;
   padding: 35px 0;
-
+  margin: 0 3px;
 }
 .menu__item a{
   text-transform: uppercase;
   color: #ba0000;
-  padding: 0 20px;
+  padding: 20px 20px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+.menu__item a::after{
+  content: "";
+  position: absolute;
+  opacity: 0;
+  height: 4px;
+  width: 100%;
+  bottom: -29px;
+  left: 0;
+  transition: 0.2s;
+  transform: scaleX(0)
 }
 .menu__item a:hover::after{
   content: "";
+  opacity: 1;
   position: absolute;
   height: 4px;
-  width: 100px;
-  bottom: 0;
+  width: 100%;
+  bottom: -29px;
+  left: 0;
   background: #ba0000;
+  transition: 0.2s;
+  transform: scaleX(1)
+
 }
 .search_block{
   width: 50px;
@@ -298,16 +317,19 @@ ul{
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: -196px;
+  bottom: -189px;
   width: 1170px;
 }
 .third-screen-wrapper__box{
   width: 370px;
   box-shadow: 0px 10px 18px 0px rgba(191,191,191,0.4);
   background: white;
+  overflow: hidden;
 }
 .third-screen-wrapper__text{
   padding: 2px 30px 2px 30px;
+  background-color: white;
+  position: relative;
 }
 .third-screen__list{
   padding: 17px 20px 17px 20px;
@@ -325,6 +347,14 @@ ul{
   border: 6px solid transparent;
   border-left: 6px solid #ffcc00;
   position: absolute;
+}
+.third-screen-wrapper__box__image{
+  display: block;
+  transition: 0.5s;
+}
+.third-screen-wrapper__box__image:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .third-screen-wrapper__box__title{
   color: #ba0000;
@@ -406,4 +436,45 @@ ul{
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+.fifth_block{
+  background-color: #ba0000;
+  color: white;
+  margin-top: 100px;
+}
+.wrapper_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+.wrapper_block__text{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.wrapper_block__title{
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+}
+.wrapper_block__lead{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding-top: 35px;
+  width: 750px;
+}
+.wrapper_block__link{
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #a00000;
+  border-radius: 25.0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
