@@ -16,11 +16,12 @@ ul{
 .container{
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .header-widget{
   display: flex;
   justify-content: space-between;
-  padding: 14px 10px;
+  padding: 14px 0px;
   font-size: 14px;
 }
 .fa-chevron-down{
@@ -219,8 +220,9 @@ ul{
 .wrapper{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
+
 }
 .wrapper-box{
   width: 270px;
@@ -317,6 +319,7 @@ ul{
 .third-screen-wrapper{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: absolute;
   bottom: -189px;
   width: 1170px;
@@ -508,12 +511,24 @@ ul{
 }
 
 @media (max-width: 1200px) {
+  .first-screen .container{
+    padding-left: 50px;
+  }
+  .slogan{
+    padding-top: 250px;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
   .wrapper-box{
-    width: 270px;
-    height: 339px;
+    /* width: 270px; */
+    /* height: 339px; */
+    /* margin-bottom: 25px; */
+    margin: 30px;
   }
   .third-screen-wrapper{
-    flex-wrap: wrap;
     position: relative;
     bottom: 0;
     width: auto;
@@ -526,8 +541,12 @@ ul{
   }
   .video{
     min-height: auto;
+    margin: 0 0 25px 0;
   }
   .fourth_screen{
     margin-top: 50px;
+  }
+  .title{
+    padding: 50px 0 25px 0;
   }
 }
