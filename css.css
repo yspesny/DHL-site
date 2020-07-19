@@ -137,9 +137,6 @@ ul{
   background-size: cover;
   background-position: center top;
 }
-.first-screen{
-  min-height: 100vh;
-}
 .slogan{
   font-size: 70px;
   color: white;
@@ -515,7 +512,13 @@ ul{
     padding-left: 50px;
   }
   .slogan{
-    padding-top: 250px;
+    padding-top: 100px;
+  }
+  .slogan_text{
+    font-size: 10px;
+  }
+  .advantages p{
+    font-size: 10px;
   }
   .wrapper{
     display: grid;
@@ -548,5 +551,12 @@ ul{
   }
   .title{
     padding: 50px 0 25px 0;
+  }
+}
+
+@media (max-width: 450px){
+  .first-screen{
+    background-image: url("d");
+    min-height: 1vh;
   }
 }
