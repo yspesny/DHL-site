@@ -220,9 +220,10 @@ ul{
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .wrapper-box{
-  min-width: 270px;
+  width: 270px;
   height: 339px;
 }
 .wrapper-box__title{
@@ -504,4 +505,29 @@ ul{
   transition: 0.2s;
   display: block;
   margin: 40px auto 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .wrapper-box{
+    width: 270px;
+    height: 339px;
+  }
+  .third-screen-wrapper{
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+    width: auto;
+  }
+  .third-screen{
+    min-height: auto;
+  }
+  .wrapper_team{
+    flex-wrap: wrap;
+  }
+  .video{
+    min-height: auto;
+  }
+  .fourth_screen{
+    margin-top: 50px;
+  }
 }
