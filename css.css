@@ -478,3 +478,30 @@ ul{
   font-weight: bold;
   letter-spacing: 0.1em;
 }
+.partners_section{
+  margin: 75px 0;
+}
+.partners_block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner{
+  border: 2px solid rgba(186,0,0,0.1);
+  height: 125px;
+  width: 265px;
+  transition: 0.2s;
+}
+.partner:hover img{
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.partner:hover{
+  border: 2px solid #a00000;
+  transition: 0.2s;
+}
+.partner img{
+  transition: 0.2s;
+  display: block;
+  margin: 40px auto 0 auto;
+}
