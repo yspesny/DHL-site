@@ -113,7 +113,6 @@ ul{
   background: #ba0000;
   transition: 0.2s;
   transform: scaleX(1)
-
 }
 .search_block{
   width: 50px;
@@ -160,6 +159,7 @@ ul{
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #ffcc00;
+  /* width: 750px; */
 }
 .advantages{
   padding: 25px 0 45px 0;
@@ -492,6 +492,7 @@ ul{
   height: 125px;
   width: 265px;
   transition: 0.2s;
+  margin: 0 5px;
 }
 .partner:hover img{
   transform: scale(1.02);
@@ -515,10 +516,14 @@ ul{
     padding-top: 100px;
   }
   .slogan_text{
-    font-size: 10px;
+    font-size: 20px;
   }
   .advantages p{
-    font-size: 10px;
+    font-size: 20px;
+  }
+  .title{
+    padding: 50px 0 0px 0;
+    text-align: center;
   }
   .wrapper{
     display: grid;
@@ -526,16 +531,22 @@ ul{
     justify-content: center;
   }
   .wrapper-box{
-    /* width: 270px; */
-    /* height: 339px; */
-    /* margin-bottom: 25px; */
+    width: 270px;
+    height: 339px;
+    margin-bottom: 25px;
     margin: 30px;
   }
   .third-screen-wrapper{
+    display: flex;
+    justify-content: center;
     position: relative;
     bottom: 0;
-    width: auto;
+    width: 100%;
   }
+  .third-screen-wrapper__box{
+    margin: 0px 30px 30px 30px;
+  }
+
   .third-screen{
     min-height: auto;
   }
@@ -549,14 +560,73 @@ ul{
   .fourth_screen{
     margin-top: 50px;
   }
-  .title{
-    padding: 50px 0 25px 0;
+  .partners_block{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .partner{
+    margin-top: 15px;
+    border: 0;
+    background: #ececec;
+  }
+  .partners_section{
+    margin-top: 25px;
   }
 }
 
-@media (max-width: 450px){
-  .first-screen{
-    background-image: url("d");
-    min-height: 1vh;
+@media(max-width: 1080px){
+  .right_box{
+    display: none;
+  }
+  .wrapper_team{
+    justify-content: center;
+  }
+  .left_box{
+    width: 100%;
+  }
+}
+@media(max-width: 900px){
+  .search_block{
+    height: 25px;
+    width: 25px;
+    position: relative;
+  }
+  .search_block i{
+    position: absolute;
+    font-size: 10px;
+    bottom: 7px;
+    left: 8px;
+  }
+  .menu__item{
+    margin: 0;
+    padding: 20px 0;
+  }
+  .header-section{
+    padding: 0;
+  }
+  .menu__item a::after{
+    bottom: -2px;
+  }
+  .menu__item a:hover::after{
+    bottom: -2px;
+  }
+  .wrapper_block{
+    display: block;
+    padding: 50px;
+  }
+  .wrapper_block__link{
+    margin-top: 30px;
+    display: block;
+    width: 150px;
+    height: 50px;
+  }
+  .fifth_block{
+    margin-top: 50px;
+  }
+  .third-screen-wrapper__box{
+    display: flex;
+    align-items: center;
+    width: auto;
   }
 }
