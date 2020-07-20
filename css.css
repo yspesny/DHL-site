@@ -639,11 +639,81 @@ ul{
 @media(max-width: 830px){
   .third-screen-wrapper__box{
     display: block;
+    width: 100%;
   }
   .third-screen-wrapper__box__image{
-    width: 500px;
+    width: 100%;
   }
   .wrapper{
-    
+    display: block;
+  }
+  .wrapper-box{
+    display: block;
+    width: auto;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  .wrapper-box img{
+    width: 100%;
+  }
+  .partners_block{
+    display: inline-flex;
+    width: 100%;
+  }
+  .partner img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+  .partner{
+    background: none;
+    margin: 0 15px;
+  }
+  .left_box__menu__elem{
+    padding: 0;
+  }
+  .left_box__menu__elem:nth-child(2) {
+    background: none;
+    box-shadow: none;
+  }
+}
+@media(max-width: 600px){
+  .first-screen .container {
+    padding: 0 10px;
+  }
+  .slogan{
+    font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 0;
+  }
+  .slogan::before{
+    bottom: -15px;
+  }
+  .slogan_text{
+    padding-top: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .advantages p{
+    font-size: 12px;
+    padding-right: 15px;
+  }
+  .advantages__elem::after{
+    right: 4px;
+    top: 10px;
+  }
+  .btn{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .advantages{
+    padding-bottom: 35px;
+  }
+  .title{
+    padding-top: 25px;
+    font-size: 29px;
+  }
+  .third-screen-wrapper__text{
+    padding: 0;
   }
 }
