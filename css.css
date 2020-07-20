@@ -703,8 +703,10 @@ ul{
     top: 10px;
   }
   .btn{
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
   }
   .advantages{
     padding-bottom: 35px;
