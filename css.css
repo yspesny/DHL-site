@@ -718,4 +718,7 @@ ul{
   .third-screen-wrapper__text{
     padding: 0;
   }
+  .third-screen-wrapper__box{
+    box-shadow: none;
+  }
 }
