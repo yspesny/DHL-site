@@ -621,7 +621,7 @@ header{
     padding: 20px 0;
   }
   .header-section{
-    padding: 5px;
+    padding: 15px 15px;
   }
   .menu__item a::after{
     bottom: -2px;
@@ -759,9 +759,6 @@ header{
     padding: 0;
     font-size: 20px;
   }
-  .logo_img{
-    width: 75px;
-  }
   .burger_menu.active{
     margin-top: 10px;
   }
@@ -821,5 +818,8 @@ header{
   }
   .third-screen-wrapper__box{
     box-shadow: none;
+  }
+  .logo_img{
+    width: 75px;
   }
 }
