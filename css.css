@@ -18,6 +18,11 @@ ul{
   margin: 0 auto;
   padding: 0 10px;
 }
+header{
+  /* position: fixed;
+  width: 100%;
+  z-index: 50; */
+}
 .header-widget{
   display: flex;
   justify-content: space-between;
@@ -592,10 +597,19 @@ ul{
   }
 }
 @media(max-width: 900px){
+  .menu-section{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
   .search_block{
     height: 25px;
     width: 25px;
     position: relative;
+  }
+  .logo_img{
+    width: 100px;
+    display: block;
   }
   .search_block i{
     position: absolute;
@@ -608,7 +622,7 @@ ul{
     padding: 20px 0;
   }
   .header-section{
-    padding: 0;
+    padding: 5px;
   }
   .menu__item a::after{
     bottom: -2px;
@@ -632,11 +646,11 @@ ul{
   .fifth_block{
     margin-top: 50px;
   }
-  .top-widget, .menu-section{
-    display: none;
-  }
 }
 @media(max-width: 830px){
+  body.lock{
+    overflow: hidden;
+  }
   .third-screen-wrapper__box{
     display: block;
     width: 100%;
@@ -676,7 +690,92 @@ ul{
     background: none;
     box-shadow: none;
   }
+  .header-widget{
+    z-index: 5;
+  }
+  .burger_menu{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 55;
+  }
+  .burger_menu:after,
+  .burger_menu:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #ba0000;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .burger_menu:after{
+    top: 0;
+  }
+  .burger_menu:before{
+    bottom: 0;
+  }
+  .burger_menu span{
+    width: 100%;
+    height: 2px;
+    background: #ba0000;
+    position: absolute;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .search_block,
+  .top-widget,
+  .header-section nav{
+    display: none;
+  }
+  .header-section  nav{
+    position: fixed;
+    display: block;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffcc00;
+    transition: 0.3s ease 0s;
+  }
+  .menu{
+    display: block;
+    margin-top: 55px;
+    padding-left: 25px;
+  }
+  .header-section  nav.active{
+    top: 0;
+  }
+  .menu__item a::after{
+    display: none;
+  }
+  .menu__item{
+    padding: 0 0 15px 0;
+  }
+  .menu__item a{
+    padding: 0;
+    font-size: 20px;
+  }
+  .logo_img{
+    width: 75px;
+  }
+  .burger_menu.active{
+    margin-top: 10px;
+  }
+  .burger_menu.active::before{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .burger_menu.active::after{
+    transform: rotate(45deg);
+    bottom: 0;
+  }
+  .burger_menu.active span{
+    display: none;
+  }
 }
+
 @media(max-width: 600px){
   .first-screen .container {
     padding: 0 10px;
