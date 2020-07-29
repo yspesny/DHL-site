@@ -500,6 +500,7 @@ header{
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 0.05em;
+  line-height: 35px;
 }
 .wrapper_block__lead{
   font-size: 16px;
@@ -1007,7 +1008,7 @@ header{
   .logo_img{
     width: 75px;
   }
-    .footer_list{
+  .footer_list{
     padding: 0;
     margin: 0 auto;
   }
@@ -1020,6 +1021,7 @@ header{
   }
   .footer_list li{
     width: 215px;
+    margin-bottom: 5px;
   }
   .partners_section{
     display: none;
