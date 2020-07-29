@@ -224,6 +224,7 @@ header{
   position: relative;
   border: 2px solid white;
   transition: 0.2s;
+  display: inline-block;
 }
 .first_screen__btn__elem2:hover{
   background-color: #ffcc00;
