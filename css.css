@@ -33,7 +33,14 @@ header{
 }
 .fa-chevron-down{
   font-size: 10px;
-  padding-left: 5px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.container-widget__lang.active i{
+  transform: rotate(180deg);
+}
+.container-widget-menu__elem2.active i{
+  transform: rotate(180deg);
 }
 .container-widget-menu__list{
   display: flex;
